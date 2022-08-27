@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+#question_box{
+    box-shadow: -4px 4px 10px rgb(51, 51, 51);
+    width: 840px;
+    height: 410px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+p{
+    font-size: 23px;
+}
+#question_side{
+    padding: 25px 25px 0 25px;
+}
+.ui{
+    line-height: 10px;
+}
+body{
+    background-color: #9fa4c4;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+    font-family: 'Quicksand', sans-serif;
+}
+.ui{
+    line-height: 17px;
+}
+/* position: relative; is relative to its current position */
+/* if width: 100%; then applying absolute makes it 100% of window size */
+/* made a container #question_side_contr in which #question_side expands and shrinks which doesn't effects its surroundings (here pink button) in its position because expansion and shrink is all within the #question_side_contr which has fixed 85% height and wheareas button has 15% height */
+button{
+    background-color:#bd4f6c;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    height:15%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    cursor: grab;
+}
+label,input{
+    cursor: pointer;
+}
+#question_side_contr{
+    height: 85%;
+}
+button:hover{
+    background-color:#c5496a;
+}
+button:active{
+    background-color: seagreen;
+    font-size: 27px;
+    /* outline:5px solid rgb(102, 143, 120); */
+}
+/* button:focus{background-color: darkgreen;} */
+/* hover active link visited focus */
